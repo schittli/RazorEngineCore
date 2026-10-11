@@ -39,7 +39,8 @@ namespace RazorEngineCore
                 return await LoadVersion1(stream);
             }
 
-            throw new RazorEngineException("Unable to load template: wrong version");
+            // Exception with unqiue ID
+            throw new RazorEngineException("2qdiln Unable to load template: wrong version");
         }
 
         private static async Task<RazorEngineCompiledTemplateMeta> LoadVersion1(Stream stream)

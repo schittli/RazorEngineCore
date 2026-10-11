@@ -15,7 +15,9 @@ namespace RazorEngineCore
             get
             {
                 var errors = string.Join("\n", Errors.Where(w => w.IsWarningAsError || w.Severity == DiagnosticSeverity.Error));
-                return "Unable to compile template: " + errors;
+
+                // Exception with unqiue ID
+                return "2qdilo Unable to compile template: " + errors;
             }
         }
     }

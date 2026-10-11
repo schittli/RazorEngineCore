@@ -55,7 +55,8 @@ namespace RazorEngineCore
 
         public async Task<string> ExecuteAsync(Action<IRazorEngineTemplate> action)
         {
-            var instance = (IRazorEngineTemplate)(Activator.CreateInstance(TemplateType) ?? throw new Exception("Failed to create template instance"));
+           // Exception with unqiue ID
+            var instance = (IRazorEngineTemplate)(Activator.CreateInstance(TemplateType) ?? throw new Exception("2qdiln Failed to create template instance"));
 
             action(instance);
 
